@@ -92,7 +92,10 @@ class NavigationNode(Node):
         return CancelResponse.ACCEPT
 
     def stop(self):
-        self.cmd_pub.publish(Twist())
+        try:
+            self.cmd_pub.publish(Twist())
+        except Exception:   # node is shutting down (Ctrl+C); nothing left to stop
+            pass
 
     def publish_path(self, path):
         msg = Path()

@@ -15,6 +15,7 @@ import rclpy
 from action_msgs.msg import GoalStatus
 from climate_robot_interfaces.action import NavigateTo
 from climate_robot_interfaces.msg import WeatherPrediction
+from nav_msgs.msg import Odometry
 from rclpy.action import ActionClient
 from rclpy.node import Node
 from std_msgs.msg import Float32, String
@@ -55,6 +56,7 @@ class MissionManager(Node):
         self.final_return = False
         self.failures = 0
         self.dwell_until = 0.0
+        self.odom_ready = False   # navigation rejects goals until the first /odom arrives
 
         self.busy = False
         self.goal_handle = None
@@ -65,6 +67,7 @@ class MissionManager(Node):
         self.scale_pub = self.create_publisher(Float32, "mission/speed_scale", 10)
         self.create_service(SetBool, "mission/set_patrol", self.on_set_patrol)
         self.create_subscription(WeatherPrediction, "weather/prediction", self.on_prediction, 10)
+        self.create_subscription(Odometry, "odom", self.on_odom, 10)
         self.nav_client = ActionClient(self, NavigateTo, "navigate_to")
 
         self.publish_state()
@@ -80,6 +83,9 @@ class MissionManager(Node):
         response.message = "patrol started/resumed" if self.patrol_enabled else "patrol paused"
         self.get_logger().info(response.message)
         return response
+
+    def on_odom(self, msg):
+        self.odom_ready = True
 
     # ----- weather -----
     def on_prediction(self, msg):
@@ -105,6 +111,10 @@ class MissionManager(Node):
     def tick(self):
         self.publish_speed_scale()
         if self.finished:
+            return
+
+        if not self.odom_ready:
+            self.get_logger().info("waiting for robot odometry...", throttle_duration_sec=5.0)
             return
 
         if self.mode == DOCKED:
