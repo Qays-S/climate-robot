@@ -1,0 +1,51 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: map
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 14
+      Offset: {X: 6, Y: 5, Z: 0}
+    - Class: rviz_default_plugins/Map
+      Name: Map
+      Enabled: false
+      Topic:
+        Value: /map
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+      Alpha: 0.9
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Dock and waypoints
+      Enabled: true
+      Topic:
+        Value: /world_markers
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+    - Class: rviz_default_plugins/Marker
+      Name: Robot
+      Enabled: true
+      Topic:
+        Value: /robot_marker
+    - Class: rviz_default_plugins/Path
+      Name: Planned path
+      Enabled: true
+      Color: 255; 255; 0
+      Line Style: {Line Width: 0.05, Value: Lines}
+      Topic:
+        Value: /planned_path
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Top view
+      Scale: 55
+      X: 6
+      Y: 5

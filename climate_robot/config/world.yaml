@@ -1,0 +1,21 @@
+# Simulated patrol world. Units are metres; the origin is the bottom-left corner.
+world:
+  width: 12.0
+  height: 10.0
+  resolution: 0.1        # planner grid cell size
+  robot_radius: 0.30
+  safety_margin: 0.20    # extra clearance the planner keeps from obstacles and walls
+
+  dock: {x: 1.0, y: 1.0, yaw: 0.0}
+
+  waypoints:
+    - {name: wp1, x: 10.0, y: 1.5}
+    - {name: wp2, x: 10.5, y: 8.5}
+    - {name: wp3, x: 6.0,  y: 8.0}
+    - {name: wp4, x: 1.5,  y: 8.5}
+
+  obstacles:
+    - {type: rect,   x_min: 3.5, y_min: 0.0, x_max: 4.5, y_max: 4.0}   # wall rising from the south edge
+    - {type: circle, x: 7.5, y: 5.0, r: 1.0}                           # pillar in the middle
+    - {type: rect,   x_min: 8.5, y_min: 6.0, x_max: 9.5, y_max: 10.0}  # wall hanging from the north edge
+    - {type: circle, x: 2.5, y: 6.0, r: 0.8}                           # pillar near the north-west
