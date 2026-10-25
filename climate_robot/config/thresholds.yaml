@@ -1,0 +1,4 @@
+# Wind thresholds from real WeatherSTEM data, training years only (<= 2025), observed hours only
+wind_p75: 4.43
+wind_p90: 7.22
+demo_start_time: "2026-04-18 11:00:00"

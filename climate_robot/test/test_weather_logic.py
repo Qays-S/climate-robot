@@ -8,18 +8,18 @@ from climate_robot import state_machine as sm
 from climate_robot.features import BASE_COLS, HISTORY_NEEDED, build_feature_dict, to_row
 from climate_robot.weather_data import load_observations
 
-P75, P90 = 6.0, 9.0
+P75, P90 = 4.43, 7.22
 
 
 @pytest.mark.parametrize("wind,rain,expected", [
     (3.0, False, sm.NORMAL),
-    (5.99, False, sm.NORMAL),
-    (6.0, False, sm.CAUTION),
-    (8.9, False, sm.CAUTION),
-    (9.0, False, sm.PAUSE),
+    (4.42, False, sm.NORMAL),
+    (4.43, False, sm.CAUTION),
+    (7.1, False, sm.CAUTION),
+    (7.22, False, sm.PAUSE),
     (2.0, True, sm.PAUSE),
     (7.0, True, sm.PAUSE),
-    (9.0, True, sm.RETURN),
+    (7.22, True, sm.RETURN),
     (15.0, True, sm.RETURN),
 ])
 def test_decide_state(wind, rain, expected):
@@ -65,3 +65,25 @@ def test_models_accept_live_features():
     assert wind.predict(row)[0] >= 0.0
     p = rain.predict_proba(row)[0]
     assert 0.0 <= p[list(rain.classes_).index(1.0)] <= 1.0
+
+
+def test_thresholds_file_is_sane():
+    import yaml
+    from conftest import ROOT
+    with open(os.path.join(ROOT, "config", "thresholds.yaml")) as f:
+        t = yaml.safe_load(f)
+    assert 0 < t["wind_p75"] < t["wind_p90"]
+    assert t["wind_p75"] == pytest.approx(4.43) and t["wind_p90"] == pytest.approx(7.22)
+
+
+@pytest.mark.parametrize("state,returning,enabled,expected", [
+    (sm.NORMAL, False, True, 1.0),
+    (sm.CAUTION, False, True, 0.5),
+    (sm.PAUSE, False, True, 0.0),
+    (sm.RETURN, False, True, 1.0),
+    (sm.NORMAL, False, False, 0.0),      # patrol paused by the service
+    (sm.PAUSE, True, True, 1.0),         # already heading home: finish the trip
+    (sm.CAUTION, True, True, 1.0),
+])
+def test_effective_speed_scale(state, returning, enabled, expected):
+    assert sm.effective_speed_scale(state, returning, enabled) == expected

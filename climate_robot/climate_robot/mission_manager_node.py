@@ -104,7 +104,7 @@ class MissionManager(Node):
         self.state_pub.publish(String(data=self.state))
 
     def publish_speed_scale(self):
-        scale = 0.0 if not self.patrol_enabled else sm.SPEED_SCALE[self.state]
+        scale = sm.effective_speed_scale(self.state, self.mode == RETURNING, self.patrol_enabled)
         self.scale_pub.publish(Float32(data=float(scale)))
 
     # ----- patrol logic -----

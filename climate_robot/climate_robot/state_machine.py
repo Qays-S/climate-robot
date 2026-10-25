@@ -26,3 +26,16 @@ def decide_state(predicted_wind_mph: float, rain_predicted: bool,
     if predicted_wind_mph >= wind_p75:
         return CAUTION
     return NORMAL
+
+
+def effective_speed_scale(state: str, returning: bool, patrol_enabled: bool = True) -> float:
+    """Speed fraction sent to navigation.
+
+    Once the robot has started returning to the dock it finishes the trip at full speed,
+    even if the weather improves to PAUSE on the way (stopping in the open would defeat the point).
+    """
+    if not patrol_enabled and not returning:
+        return 0.0
+    if returning:
+        return 1.0
+    return SPEED_SCALE[state]

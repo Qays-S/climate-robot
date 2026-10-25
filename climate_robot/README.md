@@ -1,4 +1,4 @@
-# climate_robot (Milestone 3)
+# climate_robot (Milestones 3 and 4)
 
 A simulated patrol robot in a small 2D world, built with ROS 2 Jazzy. The robot starts on its dock, visits four patrol waypoints while avoiding four obstacles, and returns to the dock. The weather nodes (real WeatherSTEM replay plus the Milestone 2 ML models) are already wired in; weather-based decisions are switched on in Milestone 4.
 
@@ -68,3 +68,26 @@ python3 scripts/offline_demo.py          # writes docs/patrol_trajectory.png and
 ```
 
 The navigation logic is plain Python (`world`, `planner`, `controller`, `kinematics`, `state_machine`, `features`), so it is tested without ROS. The ROS nodes are thin wrappers around it.
+
+## Milestone 4: weather-aware behaviour
+
+Thresholds come from the real data (`config/thresholds.yaml`, produced by `scripts/weather_risk_analysis.py`): wind p75 = 4.43 mph, p90 = 7.22 mph, computed from the training years (2022 to 2025) so the 2026 test data stays untouched, and applied to the predicted wind for the next hour.
+
+| State | Rule | Robot behaviour |
+|---|---|---|
+| NORMAL | wind < p75, no rain predicted | patrol at full speed |
+| CAUTION | p75 <= wind < p90, no rain predicted | patrol at half speed |
+| PAUSE | wind >= p90 **or** rain predicted | hold position (goal kept) |
+| RETURN | wind >= p90 **and** rain predicted | cancel patrol, go to the dock, wait there |
+
+Once the robot has started returning it finishes the trip home even if the state eases to PAUSE on the way. It resumes the patrol when it is docked and the state returns to NORMAL or CAUTION.
+
+```bash
+ros2 launch climate_robot weather_demo.launch.py        # replays a real 2026 storm (April 18-19), 10 s per hour
+ros2 topic echo /mission/state
+```
+
+![weather event](docs/weather_event.png)
+
+Regenerate the thresholds, state distribution and figure with
+`python3 scripts/weather_risk_analysis.py --data-dir ~/ros2_ws`.
