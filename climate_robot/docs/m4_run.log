@@ -1,0 +1,420 @@
+[INFO] [launch]: All log files can be found below /home/sashaaqh/.ros/log/2026-10-26-13-09-13-964889-sashaaqh-Latitude-7410-7582
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_sim-1]: process started with pid [7587]
+[INFO] [navigation-2]: process started with pid [7588]
+[INFO] [weather-3]: process started with pid [7589]
+[INFO] [prediction-4]: process started with pid [7590]
+[INFO] [mission_manager-5]: process started with pid [7591]
+[INFO] [rviz2-6]: process started with pid [7592]
+[rviz2-6] [INFO] [1793034554.867210150] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [INFO] [1793034554.867394444] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-6] [INFO] [1793034554.917462835] [rviz2]: Stereo is NOT SUPPORTED
+[navigation-2] [INFO] [1793034555.253525100] [navigation]: navigation ready: action server /navigate_to
+[mission_manager-5] [INFO] [1793034555.364295410] [mission_manager]: mission_manager ready (weather_aware=True, laps=infinite, patrol active)
+[robot_sim-1] [INFO] [1793034555.493411301] [robot_sim]: robot_sim ready: robot at dock (1.0, 1.0), 4 waypoints, 4 obstacles
+[mission_manager-5] [INFO] [1793034555.542470351] [mission_manager]: waiting for robot odometry...
+[mission_manager-5] [INFO] [1793034555.742888729] [mission_manager]: leaving dock, patrol started
+[mission_manager-5] [INFO] [1793034555.743803218] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793034555.799376142] [navigation]: navigating to 'wp1' (5 path points)
+[weather-3] [INFO] [1793034555.828240591] [weather]: loaded 36755 real observations (4118 outage hours skipped); replaying from 2026-04-18 11:00:00 every 10.0s
+[prediction-4] [INFO] [1793034556.900604902] [prediction]: models loaded from /home/sashaaqh/ros2_ws (40 features)
+[prediction-4] [INFO] [1793034565.827067948] [prediction]: warming up (1/4 hours)
+[navigation-2] [INFO] [1793034572.075656154] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793034573.142998062] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793034573.155400742] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793034575.820263248] [prediction]: warming up (2/4 hours)
+[navigation-2] [INFO] [1793034583.764382628] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793034584.942847083] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793034584.978656176] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793034585.819578096] [prediction]: warming up (3/4 hours)
+[mission_manager-5] [INFO] [1793034595.998369538] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.5 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034595.998522962] [prediction]: 2026-04-18 14:00:00: wind now 4.6 -> next hour 4.5 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793034606.186549174] [prediction]: 2026-04-18 15:00:00: wind now 5.0 -> next hour 4.9 mph, rain within 3h: False (p=0.01)
+[navigation-2] [INFO] [1793034609.411285729] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793034610.544795047] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793034610.585215791] [navigation]: navigating to 'wp4' (2 path points)
+[mission_manager-5] [INFO] [1793034616.028695706] [mission_manager]: state CAUTION -> NORMAL (predicted wind 4.0 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034616.028844313] [prediction]: 2026-04-18 16:00:00: wind now 4.1 -> next hour 4.0 mph, rain within 3h: False (p=0.01)
+[navigation-2] [INFO] [1793034620.488335343] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793034620.493321357] [mission_manager]: lap 1 complete
+[mission_manager-5] [INFO] [1793034621.542462753] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793034621.578950123] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793034626.113308298] [prediction]: 2026-04-18 17:00:00: wind now 3.1 -> next hour 2.8 mph, rain within 3h: False (p=0.02)
+[prediction-4] [INFO] [1793034636.115758303] [prediction]: 2026-04-18 18:00:00: wind now 2.8 -> next hour 2.3 mph, rain within 3h: False (p=0.03)
+[navigation-2] [INFO] [1793034637.817836971] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793034638.944246845] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793034638.982463399] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793034646.181577111] [prediction]: 2026-04-18 19:00:00: wind now 3.0 -> next hour 2.6 mph, rain within 3h: False (p=0.07)
+[navigation-2] [INFO] [1793034649.576258597] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793034650.743923379] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793034650.851572458] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793034656.172665712] [prediction]: 2026-04-18 20:00:00: wind now 1.6 -> next hour 1.4 mph, rain within 3h: False (p=0.13)
+[mission_manager-5] [INFO] [1793034666.052701265] [mission_manager]: state NORMAL -> PAUSE (predicted wind 3.4 mph, rain predicted: True)
+[prediction-4] [INFO] [1793034666.052881369] [prediction]: 2026-04-18 21:00:00: wind now 3.6 -> next hour 3.4 mph, rain within 3h: True (p=0.66)
+[prediction-4] [INFO] [1793034676.077192295] [prediction]: 2026-04-18 22:00:00: wind now 2.6 -> next hour 3.6 mph, rain within 3h: True (p=0.57)
+[mission_manager-5] [INFO] [1793034686.000523022] [mission_manager]: state PAUSE -> CAUTION (predicted wind 4.9 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034686.001016262] [prediction]: 2026-04-18 23:00:00: wind now 4.9 -> next hour 4.9 mph, rain within 3h: False (p=0.32)
+[navigation-2] [INFO] [1793034691.013897385] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793034692.145214518] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793034692.173755566] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793034696.150786504] [prediction]: 2026-04-19 00:00:00: wind now 6.9 -> next hour 6.8 mph, rain within 3h: False (p=0.32)
+[prediction-4] [INFO] [1793034706.093045844] [prediction]: 2026-04-19 01:00:00: wind now 7.5 -> next hour 7.6 mph, rain within 3h: True (p=0.72)
+[mission_manager-5] [INFO] [1793034706.093625373] [mission_manager]: state CAUTION -> RETURN (predicted wind 7.6 mph, rain predicted: True)
+[mission_manager-5] [WARN] [1793034706.145437314] [mission_manager]: RETURN state: heading back to the dock
+[mission_manager-5] [INFO] [1793034706.182748690] [mission_manager]: goal 'wp4' canceled
+[mission_manager-5] [INFO] [1793034706.343324849] [mission_manager]: sending goal: dock
+[navigation-2] [INFO] [1793034706.441631915] [navigation]: navigating to 'dock' (3 path points)
+[mission_manager-5] [INFO] [1793034715.982010742] [mission_manager]: state RETURN -> PAUSE (predicted wind 7.6 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034715.982024026] [prediction]: 2026-04-19 02:00:00: wind now 7.5 -> next hour 7.6 mph, rain within 3h: False (p=0.33)
+[navigation-2] [INFO] [1793034717.491506625] [navigation]: reached 'dock'
+[mission_manager-5] [INFO] [1793034717.493535784] [mission_manager]: docked, waiting for conditions to improve
+[mission_manager-5] [INFO] [1793034726.154110263] [mission_manager]: state PAUSE -> CAUTION (predicted wind 6.6 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034726.154273789] [prediction]: 2026-04-19 03:00:00: wind now 6.5 -> next hour 6.6 mph, rain within 3h: False (p=0.34)
+[mission_manager-5] [INFO] [1793034726.345499379] [mission_manager]: leaving dock, patrol started
+[mission_manager-5] [INFO] [1793034726.348765363] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793034726.482826144] [navigation]: navigating to 'wp4' (3 path points)
+[prediction-4] [INFO] [1793034736.194526725] [prediction]: 2026-04-19 04:00:00: wind now 6.0 -> next hour 6.4 mph, rain within 3h: False (p=0.34)
+[mission_manager-5] [INFO] [1793034746.056534445] [mission_manager]: state CAUTION -> RETURN (predicted wind 12.3 mph, rain predicted: True)
+[prediction-4] [INFO] [1793034746.056803702] [prediction]: 2026-04-19 05:00:00: wind now 11.8 -> next hour 12.3 mph, rain within 3h: True (p=0.69)
+[mission_manager-5] [WARN] [1793034746.146382601] [mission_manager]: RETURN state: heading back to the dock
+[mission_manager-5] [INFO] [1793034746.212942684] [mission_manager]: goal 'wp4' canceled
+[mission_manager-5] [INFO] [1793034746.348605072] [mission_manager]: sending goal: dock
+[navigation-2] [INFO] [1793034746.403860711] [navigation]: navigating to 'dock' (3 path points)
+[prediction-4] [INFO] [1793034756.070092435] [prediction]: 2026-04-19 06:00:00: wind now 10.7 -> next hour 9.9 mph, rain within 3h: True (p=0.66)
+[navigation-2] [INFO] [1793034757.258329177] [navigation]: reached 'dock'
+[mission_manager-5] [INFO] [1793034757.285619801] [mission_manager]: docked, waiting for conditions to improve
+[mission_manager-5] [INFO] [1793034766.072143867] [mission_manager]: state RETURN -> PAUSE (predicted wind 9.1 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034766.072223063] [prediction]: 2026-04-19 07:00:00: wind now 8.7 -> next hour 9.1 mph, rain within 3h: False (p=0.35)
+[prediction-4] [INFO] [1793034776.087347370] [prediction]: 2026-04-19 08:00:00: wind now 10.2 -> next hour 10.3 mph, rain within 3h: False (p=0.48)
+[prediction-4] [INFO] [1793034786.125455146] [prediction]: 2026-04-19 09:00:00: wind now 12.7 -> next hour 12.5 mph, rain within 3h: False (p=0.17)
+[prediction-4] [INFO] [1793034796.124684942] [prediction]: 2026-04-19 10:00:00: wind now 11.8 -> next hour 11.6 mph, rain within 3h: False (p=0.11)
+[prediction-4] [INFO] [1793034806.011100657] [prediction]: 2026-04-19 11:00:00: wind now 11.9 -> next hour 11.3 mph, rain within 3h: False (p=0.07)
+[prediction-4] [INFO] [1793034816.158171447] [prediction]: 2026-04-19 12:00:00: wind now 14.8 -> next hour 13.4 mph, rain within 3h: False (p=0.07)
+[prediction-4] [INFO] [1793034826.142890479] [prediction]: 2026-04-19 13:00:00: wind now 15.5 -> next hour 14.3 mph, rain within 3h: False (p=0.05)
+[prediction-4] [INFO] [1793034836.134894820] [prediction]: 2026-04-19 14:00:00: wind now 15.8 -> next hour 13.8 mph, rain within 3h: False (p=0.02)
+[prediction-4] [INFO] [1793034846.145204193] [prediction]: 2026-04-19 15:00:00: wind now 10.2 -> next hour 9.4 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793034856.168121284] [prediction]: 2026-04-19 16:00:00: wind now 10.7 -> next hour 9.0 mph, rain within 3h: False (p=0.00)
+[prediction-4] [INFO] [1793034866.063428785] [prediction]: 2026-04-19 17:00:00: wind now 9.5 -> next hour 9.0 mph, rain within 3h: False (p=0.00)
+[prediction-4] [INFO] [1793034876.016820207] [prediction]: 2026-04-19 18:00:00: wind now 8.0 -> next hour 6.4 mph, rain within 3h: False (p=0.01)
+[mission_manager-5] [INFO] [1793034876.018236348] [mission_manager]: state PAUSE -> CAUTION (predicted wind 6.4 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034876.142693882] [mission_manager]: leaving dock, patrol started
+[mission_manager-5] [INFO] [1793034876.143548440] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793034876.160062371] [navigation]: navigating to 'wp4' (3 path points)
+[prediction-4] [INFO] [1793034886.188808918] [prediction]: 2026-04-19 19:00:00: wind now 8.5 -> next hour 7.8 mph, rain within 3h: False (p=0.00)
+[mission_manager-5] [INFO] [1793034886.188876851] [mission_manager]: state CAUTION -> PAUSE (predicted wind 7.8 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034896.103565063] [mission_manager]: state PAUSE -> CAUTION (predicted wind 5.9 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034896.103656575] [prediction]: 2026-04-19 20:00:00: wind now 6.1 -> next hour 5.9 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793034906.128808285] [prediction]: 2026-04-19 21:00:00: wind now 5.9 -> next hour 5.6 mph, rain within 3h: False (p=0.00)
+[navigation-2] [INFO] [1793034909.509485209] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793034909.523267046] [mission_manager]: lap 2 complete
+[mission_manager-5] [INFO] [1793034910.547445456] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793034910.692792358] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793034916.089145127] [prediction]: 2026-04-19 22:00:00: wind now 4.6 -> next hour 5.3 mph, rain within 3h: False (p=0.00)
+[prediction-4] [INFO] [1793034926.004746625] [prediction]: 2026-04-19 23:00:00: wind now 4.3 -> next hour 5.0 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793034936.182300258] [prediction]: 2026-04-20 00:00:00: wind now 5.2 -> next hour 5.5 mph, rain within 3h: False (p=0.01)
+[navigation-2] [INFO] [1793034942.082839008] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793034943.145441245] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793034943.166618952] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793034946.134251065] [prediction]: 2026-04-20 01:00:00: wind now 4.8 -> next hour 5.0 mph, rain within 3h: False (p=0.01)
+[mission_manager-5] [INFO] [1793034956.185737248] [mission_manager]: state CAUTION -> NORMAL (predicted wind 4.1 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034956.185809296] [prediction]: 2026-04-20 02:00:00: wind now 3.9 -> next hour 4.1 mph, rain within 3h: False (p=0.02)
+[navigation-2] [INFO] [1793034960.175560668] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793034961.345054184] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793034961.434034069] [navigation]: navigating to 'wp3' (8 path points)
+[mission_manager-5] [INFO] [1793034966.034032763] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.6 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034966.035804666] [prediction]: 2026-04-20 03:00:00: wind now 4.3 -> next hour 4.6 mph, rain within 3h: False (p=0.02)
+[mission_manager-5] [INFO] [1793034976.231541476] [mission_manager]: state CAUTION -> NORMAL (predicted wind 3.5 mph, rain predicted: False)
+[prediction-4] [INFO] [1793034976.231592776] [prediction]: 2026-04-20 04:00:00: wind now 3.3 -> next hour 3.5 mph, rain within 3h: False (p=0.02)
+[navigation-2] [INFO] [1793034984.382629689] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793034985.543960945] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793034985.591343259] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793034986.107759574] [prediction]: 2026-04-20 05:00:00: wind now 3.3 -> next hour 3.5 mph, rain within 3h: False (p=0.04)
+[navigation-2] [INFO] [1793034992.885030340] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793034992.909883975] [mission_manager]: lap 3 complete
+[mission_manager-5] [INFO] [1793034993.944172742] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793034994.026943103] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793034996.018247559] [prediction]: 2026-04-20 06:00:00: wind now 3.6 -> next hour 4.0 mph, rain within 3h: False (p=0.05)
+[prediction-4] [INFO] [1793035006.197521711] [prediction]: 2026-04-20 07:00:00: wind now 3.8 -> next hour 4.6 mph, rain within 3h: False (p=0.08)
+[mission_manager-5] [INFO] [1793035006.200629452] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.6 mph, rain predicted: False)
+[navigation-2] [INFO] [1793035014.064149722] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035015.146231098] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035015.211472030] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035016.317706818] [prediction]: 2026-04-20 08:00:00: wind now 6.7 -> next hour 6.6 mph, rain within 3h: False (p=0.07)
+[mission_manager-5] [INFO] [1793035026.013397324] [mission_manager]: state CAUTION -> PAUSE (predicted wind 8.1 mph, rain predicted: False)
+[prediction-4] [INFO] [1793035026.013653246] [prediction]: 2026-04-20 09:00:00: wind now 8.7 -> next hour 8.1 mph, rain within 3h: False (p=0.05)
+[prediction-4] [INFO] [1793035036.217244083] [prediction]: 2026-04-20 10:00:00: wind now 9.6 -> next hour 9.8 mph, rain within 3h: False (p=0.02)
+[prediction-4] [INFO] [1793035046.210129135] [prediction]: 2026-04-20 11:00:00: wind now 10.9 -> next hour 9.6 mph, rain within 3h: False (p=0.02)
+[prediction-4] [INFO] [1793035056.100404037] [prediction]: 2026-04-20 12:00:00: wind now 9.4 -> next hour 9.4 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035066.051877868] [prediction]: 2026-04-20 13:00:00: wind now 12.3 -> next hour 11.0 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035076.070974138] [prediction]: 2026-04-20 14:00:00: wind now 11.6 -> next hour 10.9 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035086.031293789] [prediction]: 2026-04-20 15:00:00: wind now 11.8 -> next hour 10.6 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035096.218640641] [prediction]: 2026-04-20 16:00:00: wind now 10.8 -> next hour 9.6 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035106.114545188] [prediction]: 2026-04-20 17:00:00: wind now 9.3 -> next hour 8.7 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035116.141736089] [prediction]: 2026-04-20 18:00:00: wind now 8.4 -> next hour 7.9 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035126.231661324] [prediction]: 2026-04-20 19:00:00: wind now 5.3 -> next hour 3.9 mph, rain within 3h: False (p=0.01)
+[mission_manager-5] [INFO] [1793035126.232319531] [mission_manager]: state PAUSE -> NORMAL (predicted wind 3.9 mph, rain predicted: False)
+[navigation-2] [INFO] [1793035131.358696301] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035132.545260363] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035132.621413869] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035136.137587794] [prediction]: 2026-04-20 20:00:00: wind now 2.9 -> next hour 3.0 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035146.119508331] [prediction]: 2026-04-20 21:00:00: wind now 1.3 -> next hour 1.1 mph, rain within 3h: False (p=0.03)
+[navigation-2] [INFO] [1793035150.422999156] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035151.542762907] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035151.569269216] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035156.145526686] [prediction]: 2026-04-20 22:00:00: wind now 0.9 -> next hour 1.1 mph, rain within 3h: False (p=0.04)
+[navigation-2] [INFO] [1793035158.790517406] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035158.828858612] [mission_manager]: lap 4 complete
+[mission_manager-5] [INFO] [1793035159.947659917] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035160.121215344] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035166.127043871] [prediction]: 2026-04-20 23:00:00: wind now 0.2 -> next hour 0.3 mph, rain within 3h: False (p=0.05)
+[prediction-4] [INFO] [1793035176.054526307] [prediction]: 2026-04-21 00:00:00: wind now 0.5 -> next hour 1.0 mph, rain within 3h: False (p=0.03)
+[navigation-2] [INFO] [1793035176.348252764] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035177.543853480] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035177.618729937] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035186.171205893] [prediction]: 2026-04-21 01:00:00: wind now 0.4 -> next hour 0.5 mph, rain within 3h: False (p=0.04)
+[navigation-2] [INFO] [1793035188.178080169] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035189.344076333] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035189.430758296] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035196.092265589] [prediction]: 2026-04-21 02:00:00: wind now 0.2 -> next hour 0.4 mph, rain within 3h: False (p=0.05)
+[prediction-4] [INFO] [1793035206.177494540] [prediction]: 2026-04-21 03:00:00: wind now 0.1 -> next hour 0.2 mph, rain within 3h: False (p=0.05)
+[navigation-2] [INFO] [1793035207.310999816] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035208.343074572] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035208.363064312] [navigation]: navigating to 'wp4' (2 path points)
+[navigation-2] [INFO] [1793035215.591623555] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035215.597493770] [mission_manager]: lap 5 complete
+[prediction-4] [INFO] [1793035216.164510826] [prediction]: 2026-04-21 04:00:00: wind now 0.3 -> next hour 0.4 mph, rain within 3h: False (p=0.04)
+[mission_manager-5] [INFO] [1793035216.743310040] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035216.907659124] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035226.108407792] [prediction]: 2026-04-21 05:00:00: wind now 0.3 -> next hour 0.4 mph, rain within 3h: False (p=0.03)
+[navigation-2] [INFO] [1793035233.127838744] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035234.150157303] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035234.189123163] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035236.270868834] [prediction]: 2026-04-21 06:00:00: wind now 0.0 -> next hour 0.1 mph, rain within 3h: False (p=0.04)
+[navigation-2] [INFO] [1793035244.776947757] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035245.943829061] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035246.045465080] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035246.170758898] [prediction]: 2026-04-21 07:00:00: wind now 0.1 -> next hour 0.9 mph, rain within 3h: False (p=0.05)
+[prediction-4] [INFO] [1793035256.181017474] [prediction]: 2026-04-21 08:00:00: wind now 1.7 -> next hour 3.4 mph, rain within 3h: False (p=0.13)
+[navigation-2] [INFO] [1793035263.881325507] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035264.943454882] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035264.963510672] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035266.113324766] [prediction]: 2026-04-21 09:00:00: wind now 2.9 -> next hour 3.5 mph, rain within 3h: False (p=0.10)
+[navigation-2] [INFO] [1793035272.147741945] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035272.155078826] [mission_manager]: lap 6 complete
+[mission_manager-5] [INFO] [1793035273.349473531] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035273.547969207] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035276.175519524] [prediction]: 2026-04-21 10:00:00: wind now 2.7 -> next hour 3.0 mph, rain within 3h: False (p=0.06)
+[prediction-4] [INFO] [1793035286.115549182] [prediction]: 2026-04-21 11:00:00: wind now 7.0 -> next hour 6.7 mph, rain within 3h: False (p=0.03)
+[mission_manager-5] [INFO] [1793035286.117945468] [mission_manager]: state NORMAL -> CAUTION (predicted wind 6.7 mph, rain predicted: False)
+[navigation-2] [INFO] [1793035293.289113819] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035294.343182440] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035294.402396216] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035296.074872747] [prediction]: 2026-04-21 12:00:00: wind now 6.3 -> next hour 5.9 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035306.034418510] [prediction]: 2026-04-21 13:00:00: wind now 7.0 -> next hour 6.2 mph, rain within 3h: False (p=0.02)
+[navigation-2] [INFO] [1793035315.157921803] [navigation]: reached 'wp2'
+[prediction-4] [INFO] [1793035316.048697425] [prediction]: 2026-04-21 14:00:00: wind now 7.2 -> next hour 6.2 mph, rain within 3h: False (p=0.01)
+[mission_manager-5] [INFO] [1793035316.345831527] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035316.513633273] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035326.286494464] [prediction]: 2026-04-21 15:00:00: wind now 6.3 -> next hour 5.8 mph, rain within 3h: False (p=0.00)
+[prediction-4] [INFO] [1793035336.128228784] [prediction]: 2026-04-21 16:00:00: wind now 4.0 -> next hour 4.0 mph, rain within 3h: False (p=0.01)
+[mission_manager-5] [INFO] [1793035336.128348560] [mission_manager]: state CAUTION -> NORMAL (predicted wind 4.0 mph, rain predicted: False)
+[navigation-2] [INFO] [1793035344.101709610] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035345.144578554] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035345.209931945] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035346.013310078] [prediction]: 2026-04-21 17:00:00: wind now 3.4 -> next hour 2.9 mph, rain within 3h: False (p=0.01)
+[navigation-2] [INFO] [1793035352.458185485] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035352.466468934] [mission_manager]: lap 7 complete
+[mission_manager-5] [INFO] [1793035353.542502668] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035353.581425140] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035356.017144856] [prediction]: 2026-04-21 18:00:00: wind now 3.6 -> next hour 2.3 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035366.043397696] [prediction]: 2026-04-21 19:00:00: wind now 2.5 -> next hour 1.5 mph, rain within 3h: False (p=0.02)
+[navigation-2] [INFO] [1793035369.840647284] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035370.943177716] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035370.970792769] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035375.998218014] [prediction]: 2026-04-21 20:00:00: wind now 1.7 -> next hour 1.2 mph, rain within 3h: False (p=0.04)
+[navigation-2] [INFO] [1793035381.480934798] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035382.542782008] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035382.584266722] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035386.101724002] [prediction]: 2026-04-21 21:00:00: wind now 1.2 -> next hour 1.2 mph, rain within 3h: False (p=0.05)
+[prediction-4] [INFO] [1793035395.990787421] [prediction]: 2026-04-21 22:00:00: wind now 1.0 -> next hour 1.2 mph, rain within 3h: False (p=0.05)
+[navigation-2] [INFO] [1793035400.488597538] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035401.544201019] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035401.569585826] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035406.231717789] [prediction]: 2026-04-21 23:00:00: wind now 1.4 -> next hour 1.8 mph, rain within 3h: False (p=0.10)
+[navigation-2] [INFO] [1793035408.918530698] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035408.923893090] [mission_manager]: lap 8 complete
+[mission_manager-5] [INFO] [1793035409.942642093] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035409.989947960] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035416.043767759] [prediction]: 2026-04-22 00:00:00: wind now 2.6 -> next hour 2.8 mph, rain within 3h: False (p=0.12)
+[prediction-4] [INFO] [1793035426.031675247] [prediction]: 2026-04-22 01:00:00: wind now 3.4 -> next hour 3.5 mph, rain within 3h: False (p=0.12)
+[navigation-2] [INFO] [1793035426.265313890] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035427.344869676] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035427.448073825] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035436.157483130] [prediction]: 2026-04-22 02:00:00: wind now 3.4 -> next hour 3.6 mph, rain within 3h: False (p=0.11)
+[navigation-2] [INFO] [1793035438.048259940] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035439.143678004] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035439.301068568] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035446.172871311] [prediction]: 2026-04-22 03:00:00: wind now 4.0 -> next hour 4.3 mph, rain within 3h: False (p=0.08)
+[prediction-4] [INFO] [1793035456.193413051] [prediction]: 2026-04-22 04:00:00: wind now 4.6 -> next hour 4.5 mph, rain within 3h: False (p=0.08)
+[mission_manager-5] [INFO] [1793035456.198267746] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.5 mph, rain predicted: False)
+[navigation-2] [INFO] [1793035457.917132099] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035458.945397270] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035458.963224937] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035466.058815479] [prediction]: 2026-04-22 05:00:00: wind now 4.8 -> next hour 5.1 mph, rain within 3h: False (p=0.07)
+[navigation-2] [INFO] [1793035473.176677687] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035473.190109463] [mission_manager]: lap 9 complete
+[mission_manager-5] [INFO] [1793035474.345108147] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035474.517253176] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035476.101023374] [prediction]: 2026-04-22 06:00:00: wind now 4.3 -> next hour 4.9 mph, rain within 3h: False (p=0.07)
+[prediction-4] [INFO] [1793035486.081388381] [prediction]: 2026-04-22 07:00:00: wind now 6.1 -> next hour 6.2 mph, rain within 3h: False (p=0.07)
+[prediction-4] [INFO] [1793035496.210748988] [prediction]: 2026-04-22 08:00:00: wind now 6.2 -> next hour 6.5 mph, rain within 3h: False (p=0.05)
+[prediction-4] [INFO] [1793035506.194087931] [prediction]: 2026-04-22 09:00:00: wind now 9.2 -> next hour 8.7 mph, rain within 3h: False (p=0.04)
+[mission_manager-5] [INFO] [1793035506.194168570] [mission_manager]: state CAUTION -> PAUSE (predicted wind 8.7 mph, rain predicted: False)
+[prediction-4] [INFO] [1793035516.243747830] [prediction]: 2026-04-22 10:00:00: wind now 9.7 -> next hour 9.3 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035525.971801349] [prediction]: 2026-04-22 11:00:00: wind now 10.0 -> next hour 9.3 mph, rain within 3h: False (p=0.00)
+[prediction-4] [INFO] [1793035536.153246710] [prediction]: 2026-04-22 12:00:00: wind now 8.8 -> next hour 8.6 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035546.005527667] [prediction]: 2026-04-22 13:00:00: wind now 9.1 -> next hour 8.7 mph, rain within 3h: False (p=0.00)
+[prediction-4] [INFO] [1793035556.055340588] [prediction]: 2026-04-22 14:00:00: wind now 8.4 -> next hour 8.2 mph, rain within 3h: False (p=0.00)
+[prediction-4] [INFO] [1793035566.029738095] [prediction]: 2026-04-22 15:00:00: wind now 8.8 -> next hour 8.5 mph, rain within 3h: False (p=0.00)
+[mission_manager-5] [INFO] [1793035576.000011098] [mission_manager]: state PAUSE -> CAUTION (predicted wind 6.1 mph, rain predicted: False)
+[prediction-4] [INFO] [1793035576.000009704] [prediction]: 2026-04-22 16:00:00: wind now 7.0 -> next hour 6.1 mph, rain within 3h: False (p=0.00)
+[navigation-2] [INFO] [1793035576.379635459] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035577.545030096] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035577.674920358] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035586.002122805] [prediction]: 2026-04-22 17:00:00: wind now 6.7 -> next hour 5.5 mph, rain within 3h: False (p=0.00)
+[mission_manager-5] [INFO] [1793035596.113607644] [mission_manager]: state CAUTION -> NORMAL (predicted wind 4.1 mph, rain predicted: False)
+[prediction-4] [INFO] [1793035596.113915481] [prediction]: 2026-04-22 18:00:00: wind now 5.5 -> next hour 4.1 mph, rain within 3h: False (p=0.00)
+[navigation-2] [INFO] [1793035597.360714764] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035598.544778881] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035598.764168635] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035606.262478396] [prediction]: 2026-04-22 19:00:00: wind now 4.1 -> next hour 3.0 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035616.275136134] [prediction]: 2026-04-22 20:00:00: wind now 1.8 -> next hour 1.2 mph, rain within 3h: False (p=0.02)
+[navigation-2] [INFO] [1793035616.605721550] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035617.744562690] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035617.768006203] [navigation]: navigating to 'wp4' (2 path points)
+[navigation-2] [INFO] [1793035625.016601108] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035625.019656778] [mission_manager]: lap 10 complete
+[prediction-4] [INFO] [1793035625.984110166] [prediction]: 2026-04-22 21:00:00: wind now 1.9 -> next hour 1.6 mph, rain within 3h: False (p=0.01)
+[mission_manager-5] [INFO] [1793035626.144166453] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035626.268440616] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035636.010808717] [prediction]: 2026-04-22 22:00:00: wind now 2.7 -> next hour 3.0 mph, rain within 3h: False (p=0.03)
+[navigation-2] [INFO] [1793035642.480862816] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035643.543094205] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035643.555276728] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035646.088947116] [prediction]: 2026-04-22 23:00:00: wind now 1.3 -> next hour 1.3 mph, rain within 3h: False (p=0.03)
+[navigation-2] [INFO] [1793035654.072626708] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035655.144089636] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035655.228456198] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035656.049877988] [prediction]: 2026-04-23 00:00:00: wind now 0.4 -> next hour 0.5 mph, rain within 3h: False (p=0.07)
+[prediction-4] [INFO] [1793035666.022124662] [prediction]: 2026-04-23 01:00:00: wind now 2.3 -> next hour 2.9 mph, rain within 3h: False (p=0.09)
+[navigation-2] [INFO] [1793035673.055922637] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035674.151619880] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035674.180265142] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035676.117855095] [prediction]: 2026-04-23 02:00:00: wind now 2.7 -> next hour 2.9 mph, rain within 3h: False (p=0.11)
+[navigation-2] [INFO] [1793035681.485723315] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035681.491351196] [mission_manager]: lap 11 complete
+[mission_manager-5] [INFO] [1793035682.544096422] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035682.648757009] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035685.999616342] [prediction]: 2026-04-23 03:00:00: wind now 3.9 -> next hour 4.4 mph, rain within 3h: False (p=0.12)
+[prediction-4] [INFO] [1793035696.048714426] [prediction]: 2026-04-23 04:00:00: wind now 4.2 -> next hour 4.3 mph, rain within 3h: False (p=0.11)
+[navigation-2] [INFO] [1793035698.885952302] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035699.944144490] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035700.028055852] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035705.980077169] [prediction]: 2026-04-23 05:00:00: wind now 3.9 -> next hour 4.0 mph, rain within 3h: False (p=0.12)
+[navigation-2] [INFO] [1793035710.615745227] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035711.744449520] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035711.861189662] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035716.033247503] [prediction]: 2026-04-23 06:00:00: wind now 4.2 -> next hour 4.6 mph, rain within 3h: False (p=0.10)
+[mission_manager-5] [INFO] [1793035716.033828099] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.6 mph, rain predicted: False)
+[prediction-4] [INFO] [1793035726.116108420] [prediction]: 2026-04-23 07:00:00: wind now 4.0 -> next hour 4.6 mph, rain within 3h: False (p=0.12)
+[prediction-4] [INFO] [1793035736.123658619] [prediction]: 2026-04-23 08:00:00: wind now 5.3 -> next hour 5.2 mph, rain within 3h: False (p=0.09)
+[navigation-2] [INFO] [1793035743.203278054] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035744.345849514] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035744.368160140] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035746.190346694] [prediction]: 2026-04-23 09:00:00: wind now 5.0 -> next hour 5.6 mph, rain within 3h: False (p=0.06)
+[prediction-4] [INFO] [1793035756.016685744] [prediction]: 2026-04-23 10:00:00: wind now 6.1 -> next hour 6.1 mph, rain within 3h: False (p=0.04)
+[navigation-2] [INFO] [1793035758.503854043] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035758.512459532] [mission_manager]: lap 12 complete
+[mission_manager-5] [INFO] [1793035759.544444234] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035759.629677246] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035766.154931802] [prediction]: 2026-04-23 11:00:00: wind now 4.9 -> next hour 5.1 mph, rain within 3h: False (p=0.02)
+[prediction-4] [INFO] [1793035776.003127086] [prediction]: 2026-04-23 12:00:00: wind now 6.3 -> next hour 5.7 mph, rain within 3h: False (p=0.00)
+[prediction-4] [INFO] [1793035786.013404303] [prediction]: 2026-04-23 13:00:00: wind now 5.8 -> next hour 5.4 mph, rain within 3h: False (p=0.00)
+[navigation-2] [INFO] [1793035791.647852775] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035792.747464784] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035792.773878653] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035796.017349031] [prediction]: 2026-04-23 14:00:00: wind now 5.7 -> next hour 5.3 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035806.104244788] [prediction]: 2026-04-23 15:00:00: wind now 5.5 -> next hour 5.1 mph, rain within 3h: False (p=0.00)
+[navigation-2] [INFO] [1793035813.567598973] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035814.742874447] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035814.832444469] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035816.012243585] [prediction]: 2026-04-23 16:00:00: wind now 5.4 -> next hour 4.5 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035826.174912200] [prediction]: 2026-04-23 17:00:00: wind now 5.7 -> next hour 5.2 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035836.057362571] [prediction]: 2026-04-23 18:00:00: wind now 4.7 -> next hour 3.9 mph, rain within 3h: False (p=0.01)
+[mission_manager-5] [INFO] [1793035836.058348250] [mission_manager]: state CAUTION -> NORMAL (predicted wind 3.9 mph, rain predicted: False)
+[navigation-2] [INFO] [1793035843.165816888] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035844.342984323] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035844.361847670] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035846.031052873] [prediction]: 2026-04-23 19:00:00: wind now 3.3 -> next hour 2.3 mph, rain within 3h: False (p=0.01)
+[navigation-2] [INFO] [1793035851.573303423] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035851.580738782] [mission_manager]: lap 13 complete
+[mission_manager-5] [INFO] [1793035852.742627869] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035852.808953303] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035856.032121688] [prediction]: 2026-04-23 20:00:00: wind now 2.0 -> next hour 1.5 mph, rain within 3h: False (p=0.01)
+[prediction-4] [INFO] [1793035866.217076006] [prediction]: 2026-04-23 21:00:00: wind now 2.2 -> next hour 1.7 mph, rain within 3h: False (p=0.03)
+[navigation-2] [INFO] [1793035868.992756843] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1793035870.148210680] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035870.212570533] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035876.022739044] [prediction]: 2026-04-23 22:00:00: wind now 0.2 -> next hour 0.4 mph, rain within 3h: False (p=0.07)
+[navigation-2] [INFO] [1793035880.779113433] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035881.944810540] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035882.215264967] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035886.014734381] [prediction]: 2026-04-23 23:00:00: wind now 0.0 -> next hour 0.3 mph, rain within 3h: False (p=0.12)
+[prediction-4] [INFO] [1793035896.132875170] [prediction]: 2026-04-24 00:00:00: wind now 0.2 -> next hour 0.5 mph, rain within 3h: False (p=0.13)
+[navigation-2] [INFO] [1793035900.113055099] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035901.142749616] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035901.192405248] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035906.194066255] [prediction]: 2026-04-24 01:00:00: wind now 0.4 -> next hour 0.6 mph, rain within 3h: False (p=0.17)
+[navigation-2] [INFO] [1793035908.423198309] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035908.425159147] [mission_manager]: lap 14 complete
+[mission_manager-5] [INFO] [1793035909.544208643] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035909.650157876] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035916.016921766] [prediction]: 2026-04-24 02:00:00: wind now 1.7 -> next hour 2.3 mph, rain within 3h: False (p=0.24)
+[navigation-2] [INFO] [1793035925.780773045] [navigation]: reached 'wp1'
+[prediction-4] [INFO] [1793035926.059298568] [prediction]: 2026-04-24 03:00:00: wind now 3.9 -> next hour 4.1 mph, rain within 3h: False (p=0.25)
+[mission_manager-5] [INFO] [1793035926.944166586] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793035927.072565772] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1793035936.188304265] [prediction]: 2026-04-24 04:00:00: wind now 3.8 -> next hour 4.1 mph, rain within 3h: False (p=0.22)
+[navigation-2] [INFO] [1793035937.735346963] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793035938.944246328] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793035939.121653017] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793035946.308816260] [prediction]: 2026-04-24 05:00:00: wind now 4.2 -> next hour 4.3 mph, rain within 3h: False (p=0.23)
+[mission_manager-5] [INFO] [1793035956.197279696] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.6 mph, rain predicted: False)
+[prediction-4] [INFO] [1793035956.197447622] [prediction]: 2026-04-24 06:00:00: wind now 4.3 -> next hour 4.6 mph, rain within 3h: False (p=0.21)
+[navigation-2] [INFO] [1793035957.586562986] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793035958.744151810] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793035958.781409374] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1793035966.270438667] [prediction]: 2026-04-24 07:00:00: wind now 4.7 -> next hour 4.7 mph, rain within 3h: False (p=0.23)
+[navigation-2] [INFO] [1793035972.899048575] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1793035972.901760657] [mission_manager]: lap 15 complete
+[mission_manager-5] [INFO] [1793035973.943714619] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1793035974.043524759] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1793035976.038661763] [prediction]: 2026-04-24 08:00:00: wind now 5.0 -> next hour 5.1 mph, rain within 3h: False (p=0.22)
+[prediction-4] [INFO] [1793035986.232195152] [prediction]: 2026-04-24 09:00:00: wind now 4.1 -> next hour 4.5 mph, rain within 3h: False (p=0.19)
+[prediction-4] [INFO] [1793035996.049504029] [prediction]: 2026-04-24 10:00:00: wind now 4.8 -> next hour 5.4 mph, rain within 3h: False (p=0.10)
+[navigation-2] [INFO] [1793036006.032728558] [navigation]: reached 'wp1'
+[prediction-4] [INFO] [1793036006.136062298] [prediction]: 2026-04-24 11:00:00: wind now 4.4 -> next hour 4.4 mph, rain within 3h: False (p=0.08)
+[mission_manager-5] [INFO] [1793036007.143653292] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1793036007.166469695] [navigation]: navigating to 'wp2' (2 path points)
+[mission_manager-5] [INFO] [1793036016.185540208] [mission_manager]: state CAUTION -> NORMAL (predicted wind 3.7 mph, rain predicted: False)
+[prediction-4] [INFO] [1793036016.185751240] [prediction]: 2026-04-24 12:00:00: wind now 3.3 -> next hour 3.7 mph, rain within 3h: False (p=0.05)
+[navigation-2] [INFO] [1793036022.225249080] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1793036023.344259595] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1793036023.396139497] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1793036026.142255161] [prediction]: 2026-04-24 13:00:00: wind now 3.2 -> next hour 3.2 mph, rain within 3h: False (p=0.04)
+[prediction-4] [INFO] [1793036036.053789184] [prediction]: 2026-04-24 14:00:00: wind now 2.9 -> next hour 2.7 mph, rain within 3h: False (p=0.09)
+[navigation-2] [INFO] [1793036041.271450942] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1793036042.342695814] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1793036042.358227994] [navigation]: navigating to 'wp4' (2 path points)
+[mission_manager-5] [INFO] [1793036046.071852213] [mission_manager]: state NORMAL -> PAUSE (predicted wind 1.6 mph, rain predicted: True)
+[prediction-4] [INFO] [1793036046.071859534] [prediction]: 2026-04-24 15:00:00: wind now 1.6 -> next hour 1.6 mph, rain within 3h: True (p=0.79)

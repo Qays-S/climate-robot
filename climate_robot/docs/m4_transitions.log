@@ -1,0 +1,38 @@
+[mission_manager-5] [INFO] [1793034555.742888729] [mission_manager]: leaving dock, patrol started
+[mission_manager-5] [INFO] [1793034595.998369538] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.5 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034616.028695706] [mission_manager]: state CAUTION -> NORMAL (predicted wind 4.0 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034666.052701265] [mission_manager]: state NORMAL -> PAUSE (predicted wind 3.4 mph, rain predicted: True)
+[mission_manager-5] [INFO] [1793034686.000523022] [mission_manager]: state PAUSE -> CAUTION (predicted wind 4.9 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034706.093625373] [mission_manager]: state CAUTION -> RETURN (predicted wind 7.6 mph, rain predicted: True)
+[mission_manager-5] [WARN] [1793034706.145437314] [mission_manager]: RETURN state: heading back to the dock
+[mission_manager-5] [INFO] [1793034715.982010742] [mission_manager]: state RETURN -> PAUSE (predicted wind 7.6 mph, rain predicted: False)
+[navigation-2] [INFO] [1793034717.491506625] [navigation]: reached 'dock'
+[mission_manager-5] [INFO] [1793034717.493535784] [mission_manager]: docked, waiting for conditions to improve
+[mission_manager-5] [INFO] [1793034726.154110263] [mission_manager]: state PAUSE -> CAUTION (predicted wind 6.6 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034726.345499379] [mission_manager]: leaving dock, patrol started
+[mission_manager-5] [INFO] [1793034746.056534445] [mission_manager]: state CAUTION -> RETURN (predicted wind 12.3 mph, rain predicted: True)
+[mission_manager-5] [WARN] [1793034746.146382601] [mission_manager]: RETURN state: heading back to the dock
+[navigation-2] [INFO] [1793034757.258329177] [navigation]: reached 'dock'
+[mission_manager-5] [INFO] [1793034757.285619801] [mission_manager]: docked, waiting for conditions to improve
+[mission_manager-5] [INFO] [1793034766.072143867] [mission_manager]: state RETURN -> PAUSE (predicted wind 9.1 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034876.018236348] [mission_manager]: state PAUSE -> CAUTION (predicted wind 6.4 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034876.142693882] [mission_manager]: leaving dock, patrol started
+[mission_manager-5] [INFO] [1793034886.188876851] [mission_manager]: state CAUTION -> PAUSE (predicted wind 7.8 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034896.103565063] [mission_manager]: state PAUSE -> CAUTION (predicted wind 5.9 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034956.185737248] [mission_manager]: state CAUTION -> NORMAL (predicted wind 4.1 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034966.034032763] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.6 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793034976.231541476] [mission_manager]: state CAUTION -> NORMAL (predicted wind 3.5 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035006.200629452] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.6 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035026.013397324] [mission_manager]: state CAUTION -> PAUSE (predicted wind 8.1 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035126.232319531] [mission_manager]: state PAUSE -> NORMAL (predicted wind 3.9 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035286.117945468] [mission_manager]: state NORMAL -> CAUTION (predicted wind 6.7 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035336.128348560] [mission_manager]: state CAUTION -> NORMAL (predicted wind 4.0 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035456.198267746] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.5 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035506.194168570] [mission_manager]: state CAUTION -> PAUSE (predicted wind 8.7 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035576.000011098] [mission_manager]: state PAUSE -> CAUTION (predicted wind 6.1 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035596.113607644] [mission_manager]: state CAUTION -> NORMAL (predicted wind 4.1 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035716.033828099] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.6 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035836.058348250] [mission_manager]: state CAUTION -> NORMAL (predicted wind 3.9 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793035956.197279696] [mission_manager]: state NORMAL -> CAUTION (predicted wind 4.6 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793036016.185540208] [mission_manager]: state CAUTION -> NORMAL (predicted wind 3.7 mph, rain predicted: False)
+[mission_manager-5] [INFO] [1793036046.071852213] [mission_manager]: state NORMAL -> PAUSE (predicted wind 1.6 mph, rain predicted: True)
