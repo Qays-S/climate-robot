@@ -1,0 +1,80 @@
+{
+  "thresholds": {
+    "wind_p75": 4.43,
+    "wind_p90": 7.22
+  },
+  "train_hours": 31308,
+  "test_hours": 5490,
+  "test_range": [
+    "2026-01-01 00:00:00",
+    "2026-08-31 14:00:00"
+  ],
+  "wind": {
+    "n": 5488,
+    "mae": 0.7660047712620293,
+    "rmse": 1.0767579540668468,
+    "r2": 0.8668564542604313,
+    "baseline_same_as_now_mae": 0.8393812844966304,
+    "baseline_same_as_now_rmse": 1.179854484500592
+  },
+  "rain": {
+    "n": 5484,
+    "rain_rate": 0.14095550692924871,
+    "accuracy": 0.8889496717724289,
+    "precision": 0.6145251396648045,
+    "recall": 0.5692108667529108,
+    "f1": 0.5910006715916722,
+    "auc": 0.8850951078412445,
+    "tn": 4435,
+    "fp": 276,
+    "fn": 333,
+    "tp": 440
+  },
+  "state_agreement": {
+    "n": 5484,
+    "agree": 0.7691466083150985,
+    "confusion_ideal_rows_vs_system_cols": {
+      "NORMAL": {
+        "NORMAL": 2616,
+        "CAUTION": 197,
+        "PAUSE": 229,
+        "RETURN": 0
+      },
+      "CAUTION": {
+        "NORMAL": 230,
+        "CAUTION": 745,
+        "PAUSE": 143,
+        "RETURN": 1
+      },
+      "PAUSE": {
+        "NORMAL": 239,
+        "CAUTION": 190,
+        "PAUSE": 848,
+        "RETURN": 3
+      },
+      "RETURN": {
+        "NORMAL": 1,
+        "CAUTION": 6,
+        "PAUSE": 27,
+        "RETURN": 9
+      }
+    },
+    "recall_by_ideal_state": {
+      "NORMAL": 0.8599605522682445,
+      "CAUTION": 0.6657730116175157,
+      "PAUSE": 0.6625,
+      "RETURN": 0.20930232558139536
+    },
+    "stop_needed_hours": 1323,
+    "stop_needed_missed_as_normal": 0.18140589569160998,
+    "stop_needed_slowed_or_stopped": 0.81859410430839,
+    "calm_hours": 3042,
+    "calm_hours_stopped_needlessly": 0.07527942143326759
+  },
+  "state_mix_test": {
+    "NORMAL": 3092,
+    "CAUTION": 1138,
+    "PAUSE": 1247,
+    "RETURN": 13
+  }
+}

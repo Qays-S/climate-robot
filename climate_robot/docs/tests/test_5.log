@@ -1,0 +1,77 @@
+[INFO] [launch]: All log files can be found below /home/sashaaqh/.ros/log/2026-11-10-13-38-52-869454-sashaaqh-Latitude-7410-8837
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_sim-1]: process started with pid [8840]
+[INFO] [navigation-2]: process started with pid [8841]
+[INFO] [weather-3]: process started with pid [8842]
+[INFO] [prediction-4]: process started with pid [8843]
+[INFO] [mission_manager-5]: process started with pid [8844]
+[INFO] [rviz2-6]: process started with pid [8845]
+[rviz2-6] [INFO] [1794335933.502019503] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-6] [INFO] [1794335933.502162437] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-6] [INFO] [1794335933.563907389] [rviz2]: Stereo is NOT SUPPORTED
+[mission_manager-5] [INFO] [1794335933.956324812] [mission_manager]: mission_manager ready (weather_aware=True, laps=infinite, patrol active)
+[navigation-2] [INFO] [1794335934.030783417] [navigation]: navigation ready: action server /navigate_to
+[mission_manager-5] [INFO] [1794335934.119297381] [mission_manager]: waiting for robot odometry...
+[robot_sim-1] [INFO] [1794335934.141062525] [robot_sim]: robot_sim ready: robot at dock (1.0, 1.0), 4 waypoints, 4 obstacles
+[mission_manager-5] [INFO] [1794335934.319254905] [mission_manager]: leaving dock, patrol started
+[mission_manager-5] [INFO] [1794335934.322127654] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1794335934.346360744] [navigation]: navigating to 'wp1' (5 path points)
+[weather-3] [INFO] [1794335934.628032367] [weather]: loaded 36755 real observations (4118 outage hours skipped); replaying from 2026-01-01 19:00:00 every 10.0s
+[prediction-4] [INFO] [1794335935.088472330] [prediction]: models loaded from /home/sashaaqh/ros2_ws (40 features)
+[prediction-4] [INFO] [1794335944.612779137] [prediction]: warming up (1/4 hours)
+[navigation-2] [INFO] [1794335950.515989633] [navigation]: reached 'wp1'
+[mission_manager-5] [INFO] [1794335951.518469566] [mission_manager]: sending goal: wp2
+[navigation-2] [INFO] [1794335951.539311053] [navigation]: navigating to 'wp2' (2 path points)
+[prediction-4] [INFO] [1794335954.623410543] [prediction]: warming up (2/4 hours)
+[navigation-2] [INFO] [1794335962.183668519] [navigation]: reached 'wp2'
+[mission_manager-5] [INFO] [1794335963.318649590] [mission_manager]: sending goal: wp3
+[navigation-2] [INFO] [1794335963.354288460] [navigation]: navigating to 'wp3' (8 path points)
+[prediction-4] [INFO] [1794335964.613520261] [prediction]: warming up (3/4 hours)
+[mission_manager-5] [INFO] [1794335974.796319395] [mission_manager]: state NORMAL -> CAUTION (predicted wind 5.4 mph, rain predicted: False)
+[prediction-4] [INFO] [1794335974.796327906] [prediction]: 2026-01-01 22:00:00: wind now 5.7 -> next hour 5.4 mph, rain within 3h: False (p=0.22)
+[prediction-4] [INFO] [1794335984.724013278] [prediction]: 2026-01-01 23:00:00: wind now 4.3 -> next hour 4.5 mph, rain within 3h: False (p=0.18)
+[navigation-2] [INFO] [1794335987.418184450] [navigation]: reached 'wp3'
+[mission_manager-5] [INFO] [1794335988.518763647] [mission_manager]: sending goal: wp4
+[navigation-2] [INFO] [1794335988.562409424] [navigation]: navigating to 'wp4' (2 path points)
+[prediction-4] [INFO] [1794335994.724268370] [prediction]: 2026-01-02 00:00:00: wind now 5.6 -> next hour 6.2 mph, rain within 3h: False (p=0.13)
+[navigation-2] [INFO] [1794336002.744955727] [navigation]: reached 'wp4'
+[mission_manager-5] [INFO] [1794336002.747189785] [mission_manager]: lap 1 complete
+[mission_manager-5] [INFO] [1794336003.919384943] [mission_manager]: sending goal: wp1
+[navigation-2] [INFO] [1794336003.970212255] [navigation]: navigating to 'wp1' (4 path points)
+[prediction-4] [INFO] [1794336004.726999040] [prediction]: 2026-01-02 01:00:00: wind now 7.9 -> next hour 7.8 mph, rain within 3h: False (p=0.13)
+[mission_manager-5] [INFO] [1794336004.727015082] [mission_manager]: state CAUTION -> PAUSE (predicted wind 7.8 mph, rain predicted: False)
+[prediction-4] [INFO] [1794336014.723927240] [prediction]: 2026-01-02 02:00:00: wind now 7.4 -> next hour 7.5 mph, rain within 3h: False (p=0.12)
+[prediction-4] [INFO] [1794336024.782344753] [prediction]: 2026-01-02 03:00:00: wind now 8.2 -> next hour 8.5 mph, rain within 3h: False (p=0.09)
+[prediction-4] [INFO] [1794336034.756925925] [prediction]: 2026-01-02 04:00:00: wind now 9.2 -> next hour 8.9 mph, rain within 3h: False (p=0.10)
+[prediction-4] [INFO] [1794336044.698772772] [prediction]: 2026-01-02 05:00:00: wind now 9.1 -> next hour 9.0 mph, rain within 3h: False (p=0.12)
+[prediction-4] [INFO] [1794336054.745936700] [prediction]: 2026-01-02 06:00:00: wind now 8.3 -> next hour 8.3 mph, rain within 3h: False (p=0.13)
+[prediction-4] [INFO] [1794336064.795773405] [prediction]: 2026-01-02 07:00:00: wind now 9.1 -> next hour 8.9 mph, rain within 3h: False (p=0.10)
+[prediction-4] [INFO] [1794336074.768182578] [prediction]: 2026-01-02 08:00:00: wind now 8.5 -> next hour 8.8 mph, rain within 3h: False (p=0.09)
+[prediction-4] [INFO] [1794336084.841238290] [prediction]: 2026-01-02 09:00:00: wind now 9.0 -> next hour 9.0 mph, rain within 3h: False (p=0.08)
+[prediction-4] [INFO] [1794336094.834142167] [prediction]: 2026-01-02 10:00:00: wind now 8.2 -> next hour 8.1 mph, rain within 3h: False (p=0.05)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[rviz2-6] [INFO] [1794336095.620419966] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[navigation-2] [ERROR] [1794336095.662441900] [navigation.action_server]: Error raised in execute callback: Failed get goal status array: feedback publisher is invalid, at ./src/rcl_action/action_server.c:1004
+[navigation-2] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:423
+[navigation-2] Traceback (most recent call last):
+[navigation-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/action/server.py", line 360, in _execute_goal
+[navigation-2]     execute_result = await await_or_execute(execute_callback, goal_handle)
+[navigation-2]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[navigation-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 115, in await_or_execute
+[navigation-2]     return callback(*args)
+[navigation-2]            ^^^^^^^^^^^^^^^
+[navigation-2]   File "/home/sashaaqh/ros2_ws/build/climate_robot/climate_robot/navigation_node.py", line 169, in execute
+[navigation-2]     goal_handle.abort()
+[navigation-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/action/server.py", line 168, in abort
+[navigation-2]     self._update_state(_rclpy.GoalEvent.ABORT)
+[navigation-2]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/action/server.py", line 117, in _update_state
+[navigation-2]     self._action_server._handle.publish_status()
+[navigation-2] rclpy._rclpy_pybind11.RCLError: Failed get goal status array: feedback publisher is invalid, at ./src/rcl_action/action_server.c:1004
+[navigation-2] [WARN] [1794336095.671223453] [navigation.action_server]: Failed to send result response (the client may have gone away)
+[navigation-2] Failed to publish log message to rosout: publisher's context is invalid, at ./src/rcl/publisher.c:423
+[INFO] [mission_manager-5]: process has finished cleanly [pid 8844]
+[INFO] [rviz2-6]: process has finished cleanly [pid 8845]
+[INFO] [robot_sim-1]: process has finished cleanly [pid 8840]
+[INFO] [weather-3]: process has finished cleanly [pid 8842]
+[INFO] [navigation-2]: process has finished cleanly [pid 8841]
+[INFO] [prediction-4]: process has finished cleanly [pid 8843]

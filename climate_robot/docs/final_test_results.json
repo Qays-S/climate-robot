@@ -1,0 +1,340 @@
+[
+  {
+    "id": 1,
+    "name": "Typical weather",
+    "spec_expected": [
+      "NORMAL"
+    ],
+    "judged_hours": 6,
+    "hours_logged": 6,
+    "complete": true,
+    "actual_text": "NORMAL (6 h)",
+    "spec_ok": true,
+    "spec_text": "Yes",
+    "match_model_hours": 6,
+    "match_ideal_hours": 6,
+    "hour_table": [
+      {
+        "time": "2026-06-20 04:00:00",
+        "ideal": "NORMAL",
+        "model_offline": "NORMAL",
+        "robot": "NORMAL"
+      },
+      {
+        "time": "2026-06-20 05:00:00",
+        "ideal": "NORMAL",
+        "model_offline": "NORMAL",
+        "robot": "NORMAL"
+      },
+      {
+        "time": "2026-06-20 06:00:00",
+        "ideal": "NORMAL",
+        "model_offline": "NORMAL",
+        "robot": "NORMAL"
+      },
+      {
+        "time": "2026-06-20 07:00:00",
+        "ideal": "NORMAL",
+        "model_offline": "NORMAL",
+        "robot": "NORMAL"
+      },
+      {
+        "time": "2026-06-20 08:00:00",
+        "ideal": "NORMAL",
+        "model_offline": "NORMAL",
+        "robot": "NORMAL"
+      },
+      {
+        "time": "2026-06-20 09:00:00",
+        "ideal": "NORMAL",
+        "model_offline": "NORMAL",
+        "robot": "NORMAL"
+      }
+    ],
+    "waypoints_reached": 6,
+    "returns": 0,
+    "docked_after_every_return": null,
+    "failures": [],
+    "rejections": 0,
+    "nav_ok": true,
+    "nav_text": "Yes"
+  },
+  {
+    "id": 2,
+    "name": "Elevated wind",
+    "spec_expected": [
+      "CAUTION"
+    ],
+    "judged_hours": 6,
+    "hours_logged": 6,
+    "complete": true,
+    "actual_text": "CAUTION (6 h)",
+    "spec_ok": true,
+    "spec_text": "Yes",
+    "match_model_hours": 6,
+    "match_ideal_hours": 6,
+    "hour_table": [
+      {
+        "time": "2026-03-22 10:00:00",
+        "ideal": "CAUTION",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      },
+      {
+        "time": "2026-03-22 11:00:00",
+        "ideal": "CAUTION",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      },
+      {
+        "time": "2026-03-22 12:00:00",
+        "ideal": "CAUTION",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      },
+      {
+        "time": "2026-03-22 13:00:00",
+        "ideal": "CAUTION",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      },
+      {
+        "time": "2026-03-22 14:00:00",
+        "ideal": "CAUTION",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      },
+      {
+        "time": "2026-03-22 15:00:00",
+        "ideal": "CAUTION",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      }
+    ],
+    "waypoints_reached": 4,
+    "returns": 0,
+    "docked_after_every_return": null,
+    "failures": [],
+    "rejections": 0,
+    "nav_ok": true,
+    "nav_text": "Yes"
+  },
+  {
+    "id": 3,
+    "name": "Rain",
+    "spec_expected": [
+      "CAUTION",
+      "PAUSE"
+    ],
+    "judged_hours": 6,
+    "hours_logged": 6,
+    "complete": true,
+    "actual_text": "PAUSE (6 h)",
+    "spec_ok": true,
+    "spec_text": "Yes",
+    "match_model_hours": 6,
+    "match_ideal_hours": 6,
+    "hour_table": [
+      {
+        "time": "2026-08-01 21:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-08-01 22:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-08-01 23:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-08-02 00:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-08-02 01:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-08-02 02:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      }
+    ],
+    "waypoints_reached": 2,
+    "returns": 0,
+    "docked_after_every_return": null,
+    "failures": [],
+    "rejections": 0,
+    "nav_ok": true,
+    "nav_text": "Yes"
+  },
+  {
+    "id": 4,
+    "name": "High environmental risk",
+    "spec_expected": [
+      "PAUSE",
+      "RETURN"
+    ],
+    "judged_hours": 6,
+    "hours_logged": 6,
+    "complete": true,
+    "actual_text": "PAUSE (6 h)",
+    "spec_ok": true,
+    "spec_text": "Yes",
+    "match_model_hours": 6,
+    "match_ideal_hours": 0,
+    "hour_table": [
+      {
+        "time": "2026-03-12 14:00:00",
+        "ideal": "RETURN",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-03-12 15:00:00",
+        "ideal": "RETURN",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-03-12 16:00:00",
+        "ideal": "RETURN",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-03-12 17:00:00",
+        "ideal": "RETURN",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-03-12 18:00:00",
+        "ideal": "RETURN",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-03-12 19:00:00",
+        "ideal": "CAUTION",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      }
+    ],
+    "waypoints_reached": 2,
+    "returns": 0,
+    "docked_after_every_return": null,
+    "failures": [],
+    "rejections": 0,
+    "nav_ok": true,
+    "nav_text": "Yes"
+  },
+  {
+    "id": 5,
+    "name": "Changing weather",
+    "spec_expected": [
+      "Multiple states"
+    ],
+    "judged_hours": 12,
+    "hours_logged": 12,
+    "complete": true,
+    "actual_text": "NORMAL (1 h) -> CAUTION (3 h) -> PAUSE (9 h)",
+    "spec_ok": true,
+    "spec_text": "Yes",
+    "match_model_hours": 12,
+    "match_ideal_hours": 10,
+    "hour_table": [
+      {
+        "time": "2026-01-01 22:00:00",
+        "ideal": "NORMAL",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      },
+      {
+        "time": "2026-01-01 23:00:00",
+        "ideal": "CAUTION",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      },
+      {
+        "time": "2026-01-02 00:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "CAUTION",
+        "robot": "CAUTION"
+      },
+      {
+        "time": "2026-01-02 01:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-01-02 02:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-01-02 03:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-01-02 04:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-01-02 05:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-01-02 06:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-01-02 07:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-01-02 08:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      },
+      {
+        "time": "2026-01-02 09:00:00",
+        "ideal": "PAUSE",
+        "model_offline": "PAUSE",
+        "robot": "PAUSE"
+      }
+    ],
+    "waypoints_reached": 4,
+    "returns": 0,
+    "docked_after_every_return": null,
+    "failures": [],
+    "rejections": 0,
+    "nav_ok": true,
+    "nav_text": "Yes"
+  }
+]

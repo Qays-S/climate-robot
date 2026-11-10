@@ -6,6 +6,7 @@ Replays a real storm from the held-out 2026 test data (2026-04-18/19: calm -> pa
 
   ros2 launch climate_robot weather_demo.launch.py
   ros2 launch climate_robot weather_demo.launch.py replay_period_s:=8.0
+  ros2 launch climate_robot weather_demo.launch.py start_time:="2026-06-20 01:00:00"   # any real hour in the data (Milestone 5 tests)
 
 Needs weatherstem_cleaned_hourly.csv and the two .joblib models in ~/ros2_ws (or data_dir:=...).
 Watch the state with:  ros2 topic echo /mission/state
@@ -25,6 +26,7 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument("rviz", default_value="true"),
         DeclareLaunchArgument("replay_period_s", default_value="10.0"),
+        DeclareLaunchArgument("start_time", default_value="2026-04-18 11:00:00"),
         DeclareLaunchArgument("data_dir", default_value=os.path.expanduser("~/ros2_ws")),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(full),
@@ -34,7 +36,7 @@ def generate_launch_description():
                 "weather_aware": "true",
                 "wind_p75": "4.43",
                 "wind_p90": "7.22",
-                "start_time": "2026-04-18 11:00:00",
+                "start_time": L("start_time"),
                 "replay_period_s": L("replay_period_s"),
                 "data_dir": L("data_dir"),
             }.items()),
