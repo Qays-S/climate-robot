@@ -37,7 +37,7 @@ def test_need_enough_history():
         build_feature_dict([{c: 0.0 for c in BASE_COLS}] * 2, __import__("datetime").datetime(2026, 1, 1))
 
 
-DATA_DIR = os.environ.get("CLIMATE_DATA_DIR", os.path.expanduser("~/ros2_ws"))
+DATA_DIR = os.environ.get("CLIMATE_DATA_DIR", os.path.expanduser("~/ros2_ws/src/climate-robot/data"))
 CSV = os.path.join(DATA_DIR, "weatherstem_cleaned_hourly.csv")
 MODELS = [os.path.join(DATA_DIR, n) for n in ("best_wind_model.joblib", "best_rain_model.joblib")]
 have_data = os.path.exists(CSV) and all(os.path.exists(m) for m in MODELS)

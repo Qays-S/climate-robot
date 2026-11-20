@@ -23,7 +23,7 @@ from .weather_data import TIME_FORMAT, load_observations, parse_time
 class WeatherNode(Node):
     def __init__(self):
         super().__init__("weather")
-        self.declare_parameter("csv_path", os.path.expanduser("~/ros2_ws/weatherstem_cleaned_hourly.csv"))
+        self.declare_parameter("csv_path", os.path.expanduser("~/ros2_ws/src/climate-robot/data/weatherstem_cleaned_hourly.csv"))
         self.declare_parameter("start_time", "2026-01-01 00:00:00")
         self.declare_parameter("end_time", "")
         self.declare_parameter("replay_period_s", 5.0)      # wall-clock seconds per dataset hour

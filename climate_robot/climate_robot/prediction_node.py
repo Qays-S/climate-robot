@@ -24,7 +24,7 @@ from .weather_data import parse_time
 class PredictionNode(Node):
     def __init__(self):
         super().__init__("prediction")
-        self.declare_parameter("model_dir", os.path.expanduser("~/ros2_ws"))
+        self.declare_parameter("model_dir", os.path.expanduser("~/ros2_ws/src/climate-robot/data"))
         model_dir = self.get_parameter("model_dir").value
 
         self.wind_model = joblib.load(os.path.join(model_dir, "best_wind_model.joblib"))

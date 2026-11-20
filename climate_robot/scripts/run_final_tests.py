@@ -5,7 +5,7 @@
   python3 scripts/run_final_tests.py --tests 2 4           # only some tests
   python3 scripts/run_final_tests.py --dry-run             # print the commands and how long each takes
 
-Needs the workspace built and sourced (source ~/ros2_ws/install/setup.bash) and the CSV + models in ~/ros2_ws.
+Needs the workspace built and sourced (source ~/ros2_ws/install/setup.bash) and the CSV + models in ~/ros2_ws/src/climate-robot/data.
 Each test starts the full weather-aware system at its own real start_time (config/final_tests.yaml), lets it run for
 the warm-up plus the judged hours, then stops it cleanly (Ctrl+C to the launch). Logs go to docs/tests/test_N.log;
 then run scripts/evaluate_tests.py.

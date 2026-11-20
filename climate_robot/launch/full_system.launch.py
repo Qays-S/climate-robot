@@ -17,7 +17,7 @@ from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     rviz_cfg = PathJoinSubstitution([FindPackageShare("climate_robot"), "rviz", "climate_robot.rviz"])
-    data_dir = os.path.expanduser("~/ros2_ws")
+    data_dir = os.path.expanduser("~/ros2_ws/src/climate-robot/data")
     L = LaunchConfiguration
     return LaunchDescription([
         DeclareLaunchArgument("rviz", default_value="true"),

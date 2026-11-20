@@ -1,6 +1,6 @@
 """Milestone 5 figures for the report and the presentation.
 
-  python3 scripts/make_m5_figures.py --data-dir ~/ros2_ws      (run scripts/final_tests.py first)
+  python3 scripts/make_m5_figures.py --data-dir ~/ros2_ws/src/climate-robot/data      (run scripts/final_tests.py first)
 
   docs/ml_test_results.png      real vs predicted next-hour wind, and the rain confusion matrix, on the 2026 test year
   docs/final_tests_overview.png the five real test windows: observed and predicted wind, thresholds, robot state per hour
@@ -114,7 +114,7 @@ def tests_figure(cfg):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--data-dir", default=os.path.expanduser("~/ros2_ws"))
+    ap.add_argument("--data-dir", default=os.path.expanduser("~/ros2_ws/src/climate-robot/data"))
     args = ap.parse_args()
     metrics = json.load(open(os.path.join(ROOT, "docs", "ml_test_metrics.json")))
     cfg = yaml.safe_load(open(os.path.join(ROOT, "config", "final_tests.yaml")))

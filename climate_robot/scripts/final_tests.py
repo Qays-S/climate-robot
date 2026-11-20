@@ -1,6 +1,6 @@
 """Milestone 5 (offline part): measure the models on the held-out year and choose the five real test windows.
 
-  python3 scripts/final_tests.py --data-dir ~/ros2_ws
+  python3 scripts/final_tests.py --data-dir ~/ros2_ws/src/climate-robot/data
 
 Uses only real WeatherSTEM hours from the held-out test years (after --train-through). Nothing is synthetic.
 
@@ -191,7 +191,7 @@ TESTS = {
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--data-dir", default=os.path.expanduser("~/ros2_ws"))
+    ap.add_argument("--data-dir", default=os.path.expanduser("~/ros2_ws/src/climate-robot/data"))
     ap.add_argument("--train-through", type=int, default=2025)
     args = ap.parse_args()
 

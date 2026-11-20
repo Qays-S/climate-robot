@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .pytest_cache/
 *:Zone.Identifier
+
+# local data (CSV + trained models), kept out of git
+data/

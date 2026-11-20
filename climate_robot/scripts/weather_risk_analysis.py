@@ -1,6 +1,6 @@
 """Milestone 4 analysis: wind thresholds, risk-state distribution, and a demo replay window.
 
-  python3 scripts/weather_risk_analysis.py --data-dir ~/ros2_ws
+  python3 scripts/weather_risk_analysis.py --data-dir ~/ros2_ws/src/climate-robot/data
 
 Reads weatherstem_cleaned_hourly.csv + the two Milestone 2 models, then
   1. computes the wind p75 / p90 thresholds from the real data,
@@ -27,7 +27,7 @@ from climate_robot.features import HISTORY_NEEDED, build_feature_dict  # noqa: E
 from climate_robot.weather_data import load_observations  # noqa: E402
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--data-dir", default=os.path.expanduser("~/ros2_ws"))
+ap.add_argument("--data-dir", default=os.path.expanduser("~/ros2_ws/src/climate-robot/data"))
 ap.add_argument("--window-hours", type=int, default=14)
 ap.add_argument("--train-through", type=int, default=2025,
                 help="thresholds use data up to this year (the Milestone 2 training years); later years are the held-out test set")

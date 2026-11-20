@@ -39,7 +39,7 @@ ros2 launch climate_robot navigation_demo.launch.py
 ros2 launch climate_robot navigation_demo.launch.py laps:=2 rviz:=false   # options
 ```
 
-Full pipeline with the weather and prediction nodes (needs `weatherstem_cleaned_hourly.csv`, `best_wind_model.joblib`, `best_rain_model.joblib` in `~/ros2_ws`, or pass `data_dir:=...`):
+Full pipeline with the weather and prediction nodes (needs `weatherstem_cleaned_hourly.csv`, `best_wind_model.joblib`, `best_rain_model.joblib` in `~/ros2_ws/src/climate-robot/data`, or pass `data_dir:=...`):
 
 ```bash
 ros2 launch climate_robot full_system.launch.py
@@ -61,9 +61,9 @@ If RViz is blank or crashes under WSL: `export LIBGL_ALWAYS_SOFTWARE=1` before l
 ## Tests (no ROS needed)
 
 ```bash
-cd ~/ros2_ws/src/climate_robot
+cd ~/ros2_ws/src/climate-robot/climate_robot
 pip install pytest numpy pyyaml
-CLIMATE_DATA_DIR=~/ros2_ws python3 -m pytest test -q
+CLIMATE_DATA_DIR=~/ros2_ws/src/climate-robot/data python3 -m pytest test -q
 python3 scripts/offline_demo.py          # writes docs/patrol_trajectory.png and docs/patrol.gif
 ```
 
@@ -90,4 +90,4 @@ ros2 topic echo /mission/state
 ![weather event](docs/weather_event.png)
 
 Regenerate the thresholds, state distribution and figure with
-`python3 scripts/weather_risk_analysis.py --data-dir ~/ros2_ws`.
+`python3 scripts/weather_risk_analysis.py --data-dir ~/ros2_ws/src/climate-robot/data`.
